@@ -1,0 +1,86 @@
+@font-face{
+    font-family: 'vazir';
+    src: url(https://virgool.io/fonts/vazir/Vazir-Regular.ttf);
+    font-display: swap;
+}
+@font-face{
+    font-family: 'vazir';
+    src: url(https://virgool.io/fonts/vazir/Vazir-Bold.ttf);
+    font-weight: bold;
+    font-display: swap;
+}
+body,html{
+    background: white !important;
+    font-family: vazir;
+}
+
+.im_message_document_caption{
+    direction: rtl;
+}
+.im_message_body{
+    font-family: vazir;
+}
+.im_message_out .im_message_body{
+    background: rgb(245, 245, 245);
+    padding: 10px;
+    border-radius: 10px;
+}
+.im_message_in .im_message_body{
+    background: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.im_message_date_split_text{
+    padding: 4px;
+    border:1px dashed;
+}
+.im_message_author, .im_message_fwd_author{
+    color:rgb(29, 29, 29) !important;
+    font-size: 13px;
+}
+.im_page_wrap.clearfix{
+    box-shadow: 0px 2px 3px 1px #dfe5ec;
+    font-family: vazir;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.tg_head_split{
+    box-shadow: 0px -2px 3px 1px #dfe5ec;
+    font-family: vazir;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.tg_head_btn.dropdown-toggle:hover{
+    background:unset;
+}
+.tg_page_head{
+    margin-top: 10px;
+}
+.im_message_photo_caption {
+    direction: rtl;
+}
+/* profile modal */
+.modal-content.modal-content-animated{
+    border-radius: 10px;
+}
+.md_modal_head{
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+
+/* text little lighter */
+.im_message_text {
+    color: #353535;
+}
+.im_message_views{
+    margin-right:5px ;
+}
+@media (min-width: 900px){
+.im_message_selected .icon-select-tick, .im_history_selectable .im_message_outer_wrap:hover .icon-select-tick {
+    opacity: 0 !important;
+}
+}
+/* eye came down after changing font */
+.icon-message-views{
+    margin-bottom: 0.5rem;
+}

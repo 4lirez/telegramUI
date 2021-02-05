@@ -1,0 +1,13 @@
+{
+    "name": "telegramUI",
+    "version": "1.0.0",
+    "description": "just a simple UI for telegram",
+    
+
+    "content_scripts":[{
+        "css": ["styles.css"],
+        "matches": ["https://web.telegram.org/*"]
+    }],
+    
+    "manifest_version": 2
+}
