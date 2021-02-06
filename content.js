@@ -1,9 +1,9 @@
-
-var observer2 = new MutationObserver(function(mutationsList, observer2) {
-    setrtlauto();
-});
-observer2.observe(document.getElementsByClassName("im_history_messages_peer")[0], {characterData: false, childList: true, attributes: false});
-
+if(document.getElementsByClassName("im_history_messages_peer")[0] != undefined){
+    var observer2 = new MutationObserver(function(mutationsList, observer2) {
+        setrtlauto();
+    });
+    observer2.observe(document.getElementsByClassName("im_history_messages_peer")[0], {characterData: false, childList: true, attributes: false});
+}
 
 
 const observer = new MutationObserver(function(mutationsList, observer) {
