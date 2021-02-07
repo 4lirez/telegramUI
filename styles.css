@@ -9,48 +9,50 @@
     font-weight: bold;
     font-display: swap;
 }
+/* black background for behind the telegram app body*/
 body,html{
     background: #000 !important;
-    font-family: vazir;
     scroll-behavior: smooth;
 }
 
-.im_message_document_caption{
-    direction: auto;
-}
-.im_message_body{
+/* Vazir font for better experience in farsi text */
+.im_message_body, .tg_head_peer_info, .modal-content.modal-content-animated{
     font-family: vazir;
 }
+/* speech bubble for sended messages */
 .im_message_out .im_message_body{
     background: rgb(245, 245, 245);
     padding: 10px;
     border-radius: 10px;
 }
+/* speech bubble for received messages */
 .im_message_in .im_message_body{
     background: aliceblue;
     padding: 10px;
     border-radius: 10px;
 }
+/* border for date reminder in chat */
 .im_message_date_split_text{
     padding: 4px;
     border:1px dashed;
 }
+/* black color for auhtor name of message */
 .im_message_author, .im_message_fwd_author{
     color:rgb(0, 0, 0) !important;
     font-size: 13px;
 }
+
+/* rounded corner for telegram app */
 .im_page_wrap.clearfix{
-    /* box-shadow: 0px 2px 3px 1px #dfe5ec; */
     font-family: vazir;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .tg_head_split{
-    /* box-shadow: 0px -2px 3px 1px #dfe5ec; */
-    font-family: vazir;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+/* fixed some issues after rounded corner */
 .tg_head_btn.dropdown-toggle:hover{
     background:unset;
 }
@@ -58,34 +60,35 @@ body,html{
 .tg_head_btn:hover{
     border-top-left-radius: 10px;
 }
+/* a bit of margin for top of telegram app */
 .tg_page_head{
     margin-top: 10px;
 }
-.im_message_photo_caption {
-    /* direction: auto; */
-}
-/* profile modal */
+
+/* profile modal rounded corners */
 .modal-content.modal-content-animated{
     border-radius: 10px;
 }
 .md_modal_head{
-border-top-right-radius: 10px;
-border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 /* text little lighter */
 .im_message_text {
     color: #353535;
 }
+/* little margin for channel messages views */
 .im_message_views{
     margin-right:5px ;
 }
+/* removed select icon on hover on messages*/
 @media (min-width: 900px){
-.im_message_selected .icon-select-tick, .im_history_selectable .im_message_outer_wrap:hover .icon-select-tick {
-    opacity: 0 !important;
+    .im_message_selected .icon-select-tick, .im_history_selectable .im_message_outer_wrap:hover .icon-select-tick {
+        opacity: 0 !important;
+    }
 }
-}
-/* eye came down after changing font */
+/* eye icon of messages came down after changing font */
 .icon-message-views{
     margin-bottom: 0.5rem;
 }
